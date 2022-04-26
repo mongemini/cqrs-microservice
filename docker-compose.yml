@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  blankdb:
+    image: postgres:14.12-alpine
+    restart: always
+    container_name: blankdb
+
+  mongemini.service.api:
+    image: ${DOCKER_REGISTRY-}mongeminiserviceapi
+    build:
+      context: .
+      dockerfile: src/service/Mongemini.Service.API/Dockerfile
+    depends_on:
+      - blankdb
