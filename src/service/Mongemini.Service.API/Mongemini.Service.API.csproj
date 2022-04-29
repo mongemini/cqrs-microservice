@@ -7,6 +7,7 @@
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..\..</DockerfileContext>
     <DockerComposeProjectPath>..\..\..\docker-compose.dcproj</DockerComposeProjectPath>
+    <Configurations>Debug;Release;Local</Configurations>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,6 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\libs\Mongemini.Bus.RabbitMq\Mongemini.Bus.RabbitMq.csproj" />
     <ProjectReference Include="..\..\libs\Mongemini.Persistence.Implementations\Mongemini.Persistence.Implementations.csproj" />
     <ProjectReference Include="..\Mongemini.Service.Application\Mongemini.Service.Application.csproj" />
     <ProjectReference Include="..\Mongemini.Service.Domain\Mongemini.Service.Domain.csproj" />

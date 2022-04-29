@@ -4,6 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Configurations>Debug;Release;Local</Configurations>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\libs\Mongemini.Application.Core\Mongemini.Application.Core.csproj" />
+    <ProjectReference Include="..\..\libs\Mongemini.Bus.Contracts\Mongemini.Bus.Contracts.csproj" />
     <ProjectReference Include="..\Mongemini.Service.Domain\Mongemini.Service.Domain.csproj" />
   </ItemGroup>
 

@@ -1,3 +1,4 @@
+using Mongemini.Bus.RabbitMq;
 using Mongemini.Persistence.Implementations.Extensions;
 using Mongemini.Service.Application;
 using Mongemini.Service.Domain;
@@ -33,10 +34,12 @@ builder.Services.AddCors(o => o.AddPolicy("CorsPolicy", options =>
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddDomain();
 builder.Services.AddApplication();
+builder.Services.AddBus(builder.Configuration);
 
 var app = builder.Build();
 
 app.MigrateDatabasesAsync(CancellationToken.None);
+app.UseEventBus();
 
 app.UseCors("CorsPolicy");
 
