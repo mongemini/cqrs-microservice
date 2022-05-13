@@ -29,6 +29,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mongemini.Bus.Contracts", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mongemini.Bus.RabbitMq", "src\libs\Mongemini.Bus.RabbitMq\Mongemini.Bus.RabbitMq.csproj", "{FE425E60-AD24-4558-B4EE-898264C80A7B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C2FEEC41-3057-4F68-B661-64073F3A76CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mongemini.Tests", "src\tests\Mongemini.Tests\Mongemini.Tests.csproj", "{1F6FD598-D5D9-4C5E-BC6D-EF31DD3D6D8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,6 +105,12 @@ Global
 		{FE425E60-AD24-4558-B4EE-898264C80A7B}.Local|Any CPU.Build.0 = Local|Any CPU
 		{FE425E60-AD24-4558-B4EE-898264C80A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE425E60-AD24-4558-B4EE-898264C80A7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F6FD598-D5D9-4C5E-BC6D-EF31DD3D6D8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F6FD598-D5D9-4C5E-BC6D-EF31DD3D6D8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F6FD598-D5D9-4C5E-BC6D-EF31DD3D6D8F}.Local|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F6FD598-D5D9-4C5E-BC6D-EF31DD3D6D8F}.Local|Any CPU.Build.0 = Debug|Any CPU
+		{1F6FD598-D5D9-4C5E-BC6D-EF31DD3D6D8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F6FD598-D5D9-4C5E-BC6D-EF31DD3D6D8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -116,6 +126,7 @@ Global
 		{66EFA10B-0A64-44C7-B000-77D125DB71F3} = {0582A087-0B21-4C8C-9F68-BD4414960732}
 		{093049E5-AF4F-4AE6-9BA7-D9805262D2A3} = {B15AACD7-4E5F-4CBE-8E4C-48C39E9A4FD9}
 		{FE425E60-AD24-4558-B4EE-898264C80A7B} = {B15AACD7-4E5F-4CBE-8E4C-48C39E9A4FD9}
+		{1F6FD598-D5D9-4C5E-BC6D-EF31DD3D6D8F} = {C2FEEC41-3057-4F68-B661-64073F3A76CD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4004D0F6-673C-47BD-9621-58B12E7B64ED}
